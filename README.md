@@ -25,6 +25,21 @@ This project is a RESTful API built with FastAPI that serves a list of Pokémon 
    ```shell
    pip install -r requirements.txt
    ```
+   
+## Configuration
+
+Configure your PostgreSQL database connection by adding the `config.py` file. Ensure that the database connection details are correctly set in the configuration.
+```shell
+config = {
+    "database": {
+        "host": "localhost",
+        "port": port_no,
+        "database": "your_db_name",
+        "user": "your_db_user",
+        "password": "your_db_password",
+    }
+}
+```
 
 ## Usage
 
@@ -50,20 +65,6 @@ This project is a RESTful API built with FastAPI that serves a list of Pokémon 
   - Filter Pokemons by name: `http://localhost:8000/api/v1/pokemons/name=Charizard/type=none`
   - Filter Pokemons by type: `http://localhost:8000/api/v1/pokemons/name=none/type=Fire`
 
-## Configuration
-
-Configure your PostgreSQL database connection by adding the `config.py` file. Ensure that the database connection details are correctly set in the configuration.
-```shell
-config = {
-    "database": {
-        "host": "localhost",
-        "port": port_no,
-        "database": "your_db_name",
-        "user": "your_db_user",
-        "password": "your_db_password",
-    }
-}
-```
 
 ## Authors
 
