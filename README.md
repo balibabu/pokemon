@@ -56,11 +56,11 @@ Configure your PostgreSQL database connection by adding the `config.py` file. En
 ```shell
 config = {
     "database": {
-        "host": "",
-        "port": ,
-        "database": "",
-        "user": "",
-        "password": "",
+        "host": "localhost",
+        "port": port_no,
+        "database": "your_db_name",
+        "user": "your_db_user",
+        "password": "your_db_password",
     }
 }
 ```
