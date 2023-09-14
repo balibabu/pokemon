@@ -102,7 +102,7 @@ async def get_pokemons(name,_type):
 
 @app.get("/")
 def greet():
-    return "Bali"
+    return {"message":"Welcome"}
 
 if __name__ == "__main__":
     import uvicorn, asyncio

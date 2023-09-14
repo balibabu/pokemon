@@ -9,8 +9,6 @@ This project is a RESTful API built with FastAPI that serves a list of Pokémon 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgments)
 
@@ -18,7 +16,7 @@ This project is a RESTful API built with FastAPI that serves a list of Pokémon 
 
 1. **Clone the Repository:**
    ```shell
-   git clone <repository-url>
+   git clone https://github.com/balibabu/pokemon
    ```
 
 2. **Install Dependencies:**
@@ -28,23 +26,13 @@ This project is a RESTful API built with FastAPI that serves a list of Pokémon 
    pip install -r requirements.txt
    ```
 
-3. **Database Configuration:**
-   Configure your PostgreSQL database connection by editing the `config.py` file. Ensure that the database connection details are correctly set in the configuration.
-
-4. **Initialize the Database:**
-   Run the following command to create the necessary database table:
-
-   ```shell
-   python main.py
-   ```
-
 ## Usage
 
 - **Start the FastAPI Server:**
   Start the FastAPI server by running:
 
   ```shell
-  uvicorn main:app --host localhost --port 8000
+  python main.py
   ```
 
 - **API Endpoints:**
@@ -64,25 +52,24 @@ This project is a RESTful API built with FastAPI that serves a list of Pokémon 
 
 ## Configuration
 
-Ensure that you configure your PostgreSQL database connection and other settings in the `config.py` file. Avoid hardcoding sensitive information and instead use configuration files or environment variables.
-
-## Contributing
-
-Contributions to this project are welcome. Please follow the standard GitHub fork and pull request workflow.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+Configure your PostgreSQL database connection by adding the `config.py` file. Ensure that the database connection details are correctly set in the configuration.
+```shell
+config = {
+    "database": {
+        "host": "",
+        "port": ,
+        "database": "",
+        "user": "",
+        "password": "",
+    }
+}
+```
 
 ## Authors
 
-- [Your Name]
+- Bali Babu Chauhan
 
 ## Acknowledgments
 
 - [PokeAPI](https://pokeapi.co/): The API used to fetch Pokémon data.
 - [FastAPI](https://fastapi.tiangolo.com/): The Python framework used to create the RESTful API.
-
----
-
-Replace `[Your Name]` in the Authors section with your name or the names of the project contributors. Additionally, make sure to replace `<repository-url>` with the URL of your Git repository where this project is hosted.
